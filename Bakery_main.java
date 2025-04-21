@@ -57,11 +57,26 @@ public class Bakery_main {
 
                     flavorChoice = scanner.nextInt();
                     switch (flavorChoice) {
-                        case 1 -> choc.printstats();
-                        case 2 -> pink.printstats();
-                        case 3 -> orange.printstats();
-                        case 4 -> green.printstats();
-                        case 5 -> purpleBlue.printstats();
+                        case 1 -> {
+                            choc.printstats();
+                            choc.Drawdonut(1);
+                        }
+                        case 2 -> {
+                            pink.printstats();
+                            pink.Drawdonut(2);
+                        }
+                        case 3 -> {
+                            orange.printstats();
+                            orange.Drawdonut(3);
+                        }
+                        case 4 -> {
+                            green.printstats();
+                            green.Drawdonut(4);
+                        }
+                        case 5 -> {
+                            purpleBlue.printstats();
+                            purpleBlue.Drawdonut(5);
+                        }
                         default -> System.out.println("Invalid choice!");
                     }
                     break;
@@ -76,11 +91,26 @@ public class Bakery_main {
 
                     flavorChoice = scanner.nextInt();
                     switch (flavorChoice) {
-                        case 1 -> chocoChiCookie.printstats();
-                        case 2 -> chocohalicMadness.printstats();
-                        case 3 -> purpleCookie.printstats();
-                        case 4 -> flamingMadness.printstats();
-                        case 5 -> brighterThanSun.printstats();
+                        case 1 -> {
+                            chocoChiCookie.printstats();
+                            chocoChiCookie.DrawCookie(1);
+                        }
+                        case 2 -> {
+                            chocohalicMadness.printstats();
+                            chocohalicMadness.DrawCookie(2);
+                        }
+                        case 3 -> {
+                            purpleCookie.printstats();
+                            purpleCookie.DrawCookie(3);
+                        }
+                        case 4 -> {
+                            flamingMadness.printstats();
+                            flamingMadness.DrawCookie(4);
+                        }
+                        case 5 -> {
+                            brighterThanSun.printstats();
+                            brighterThanSun.DrawCookie(5);
+                        }
                         default -> System.out.println("Invalid choice!");
                     }
                     break;
@@ -95,11 +125,26 @@ public class Bakery_main {
 
                     flavorChoice = scanner.nextInt();
                     switch (flavorChoice) {
-                        case 1 -> chocoMadnessCake.printstats();
-                        case 2 -> pinkCake.printstats();
-                        case 3 -> purpleCake.printstats();
-                        case 4 -> flamingRedCake.printstats();
-                        case 5 -> orangeYellow.printstats();
+                        case 1 -> {
+                            chocoMadnessCake.printstats();
+                            chocoMadnessCake.DrawCake(1);
+                        }
+                        case 2 -> {
+                            pinkCake.printstats();
+                            pinkCake.DrawCake(2);
+                        }
+                        case 3 -> {
+                            purpleCake.printstats();
+                            purpleCake.DrawCake(3);
+                        }
+                        case 4 -> {
+                            flamingRedCake.printstats();
+                            flamingRedCake.DrawCake(4);
+                        }
+                        case 5 -> {
+                            orangeYellow.printstats();
+                            orangeYellow.DrawCake(5);
+                        }
                         default -> System.out.println("Invalid choice!");
                     }
                     break;
@@ -114,11 +159,26 @@ public class Bakery_main {
 
                     flavorChoice = scanner.nextInt();
                     switch (flavorChoice) {
-                        case 1 -> chocoChipMuffin.printstats();
-                        case 2 -> chocoMuffin.printstats();
-                        case 3 -> purpleMuffin.printstats();
-                        case 4 -> fireRedMuffin.printstats();
-                        case 5 -> fallMuffin.printstats();
+                        case 1 -> {
+                            chocoChipMuffin.printstats();
+                            chocoChipMuffin.DrawMuffin(1);
+                        }
+                        case 2 -> {
+                            chocoMuffin.printstats();
+                            chocoMuffin.DrawMuffin(2);
+                        }
+                        case 3 -> {
+                            purpleMuffin.printstats();
+                            purpleMuffin.DrawMuffin(3);
+                        }
+                        case 4 -> {
+                            fireRedMuffin.printstats();
+                            fireRedMuffin.DrawMuffin(4);
+                        }
+                        case 5 -> {
+                            fallMuffin.printstats();
+                            fallMuffin.DrawMuffin(5);
+                        }
                         default -> System.out.println("Invalid choice!");
                     }
                     break;
