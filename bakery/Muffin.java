@@ -1,4 +1,4 @@
-package java;
+package bakery;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -6,13 +6,13 @@ import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Cookie {
+public class Muffin {
       String name;
       int calories, weight, sugar;
       
       
       
-      Cookie(String nam, int cal, int wht, int sgr) {
+      Muffin(String nam, int cal, int wht, int sgr) {
             name = nam;
             calories = cal;
             weight = wht;
@@ -20,13 +20,13 @@ public class Cookie {
       }
       
       void printstats() {
-            System.out.println("Cookie flavor: " + name);
-            System.out.println("Cookie calories: " + calories);
-            System.out.println("Cookie weight: " + weight);
-            System.out.println("Cookie total sugar: " + sugar);
+            System.out.println("Muffin flavor: " + name);
+            System.out.println("Muffin calories: " + calories);
+            System.out.println("Muffin weight: " + weight);
+            System.out.println("Muffin total sugar: " + sugar);
       }
       
-      void DrawCookie(int Cookie_ID) {
+      void DrawMuffin(int Muffin_ID) {
             JFrame Donut_chocolate = new JFrame();
             JPanel panels[] = new JPanel[64];
             Container window = Donut_chocolate.getContentPane();
@@ -39,8 +39,8 @@ public class Cookie {
             window.setLayout(new GridLayout(8,8));
             
             
-            Color Cookiebase = new Color (228, 134, 84);
-            Color Cookiechoco = new Color (41, 30, 24);
+            Color Muffinbase = new Color (228, 134, 84);
+            Color Muffinchoco = new Color (41, 30, 24);
             Color yellow = new Color (200, 255, 0);
             Color Orange = new Color (232, 151, 58);
             Color RED = new Color (143, 89, 27);
@@ -61,58 +61,59 @@ public class Cookie {
             
             //declare and define color objects
             
-            int Chocohalic_madness[][] = {
+            int ChocoChipMuffin[][] = {
+                        {0,0,0,2,2,0,0,0},      
+                        {0,0,2,3,2,2,0,0},      
+                        {0,2,2,2,2,2,2,0},      
+                        {0,2,2,2,2,3,2,0},      
+                        {0,2,2,2,2,2,2,0},      
+                        {0,2,3,3,2,3,2,0},      
+                        {0,2,2,2,2,2,2,0},      
                         {0,0,0,0,0,0,0,0},      
-                        {0,0,3,3,3,3,0,0},      
-                        {0,3,3,3,3,3,3,0},      
-                        {3,3,1,3,3,1,3,3},      
-                        {3,1,3,3,3,3,3,3},      
-                        {3,3,3,4,3,3,1,3},      
-                        {0,3,3,3,3,1,3,0},      
-                        {0,0,3,3,3,3,0,0},      
                         
             };
-            int FlamingMadness[][] = {
-                        {0,0,0,0,0,0,0,0},      
-                        {0,0,8,8,8,8,0,0},      
-                        {0,8,8,8,8,8,8,0},      
-                        {8,8,1,8,8,1,8,8},      
-                        {8,1,8,8,8,8,8,8},      
-                        {8,8,8,1,8,8,1,8},      
-                        {0,8,8,8,8,1,8,0},      
-                        {0,0,8,8,8,8,0,0},      
+            int  FireRedMuffinColored [][] = {
+            		{0,0,0,8,8,0,0,0},      
+                    {0,0,8,3,8,8,0,0},      
+                    {0,8,8,8,8,8,8,0},      
+                    {0,8,8,8,8,3,8,0},      
+                    {0,8,8,8,8,8,8,0},      
+                    {0,8,3,3,8,3,8,0},      
+                    {0,8,8,8,8,8,8,0},      
+                    {0,0,0,0,0,0,0,0},     
             };
-            int purple_Cookie[][] = {
-                        {0,0,0,0,0,0,0,0},      
-                        {0,0,7,7,7,7,0,0},      
-                        {0,7,7,7,7,7,7,0},      
-                        {7,7,1,7,7,1,7,7},      
-                        {7,1,7,7,7,7,7,7},      
-                        {7,7,7,1,7,7,1,7},      
-                        {0,7,7,7,7,1,7,0},      
-                        {0,0,7,7,7,7,0,0},      
+            int PurpleMuffin[][] = {
+            		{0,0,0,7,7,0,0,0},      
+                    {0,0,7,3,7,7,0,0},      
+                    {0,7,7,7,7,7,7,0},      
+                    {0,7,7,7,7,3,7,0},      
+                    {0,7,7,7,7,7,7,0},      
+                    {0,7,3,3,7,3,7,0},      
+                    {0,7,7,7,7,7,7,0},      
+                    {0,0,0,0,0,0,0,0},      
             };
             
-            int chocoChiCookie[][] = {
-                        {0,0,0,0,0,0,0,0},      
-                        {0,0,2,2,2,2,0,0},      
-                        {0,2,2,2,2,2,2,0},      
-                        {2,2,1,2,2,1,2,2},      
-                        {2,1,2,2,2,2,2,2},      
-                        {2,2,2,1,2,2,1,2},      
-                        {0,2,2,2,2,1,2,0},      
-                        {0,0,2,2,2,2,0,0},      
-                        
+            int chocoMuffin[][] = {
+            		{0,0,0,3,3,0,0,0},      
+                    {0,0,3,4,3,3,0,0},      
+                    {0,3,3,3,3,3,3,0},      
+                    {0,3,3,3,3,4,3,0},      
+                    {0,3,3,3,3,3,3,0},      
+                    {0,3,4,4,3,4,3,0},      
+                    {0,3,3,3,3,3,3,0},      
+                    {0,0,0,0,0,0,0,0},      
+                    
             };
-            int Brighter_than_sun[][] = {
-                        {0,0,0,0,0,0,0,0},      
-                        {0,0,6,6,6,6,0,0},      
-                        {0,6,6,6,6,6,6,0},      
-                        {6,6,5,6,6,5,6,6},      
-                        {6,5,6,6,6,6,6,6},      
-                        {6,6,6,5,6,6,5,6},      
-                        {0,6,6,6,6,5,6,0},      
-                        {0,0,6,6,6,6,0,0},
+            int FallColoredMuffin[][] = {
+               		{0,0,0,6,6,0,0,0},      
+                    {0,0,6,5,6,6,0,0},      
+                    {0,6,6,6,6,6,6,0},      
+                    {0,6,6,6,6,5,6,0},      
+                    {0,6,6,6,6,6,6,0},      
+                    {0,6,5,5,6,5,6,0},      
+                    {0,6,6,6,6,6,6,0},      
+                    {0,0,0,0,0,0,0,0},      
+                    
             };
             
             
@@ -127,20 +128,20 @@ public class Cookie {
             
             
             // determine drawing
-            if (Cookie_ID == 1) {
-                  drawing = chocoChiCookie;
+            if (Muffin_ID == 1) {
+                  drawing = ChocoChipMuffin;
             }
-            else if (Cookie_ID == 2) {
-                  drawing = Chocohalic_madness ;
+            else if (Muffin_ID == 2) {
+                  drawing = chocoMuffin ;
             }
-            else if (Cookie_ID == 3) {
-                  drawing = purple_Cookie;
+            else if (Muffin_ID == 3) {
+                  drawing = PurpleMuffin;
             }
-            else if (Cookie_ID == 4) {
-                  drawing = FlamingMadness;
+            else if (Muffin_ID == 4) {
+                  drawing = FireRedMuffinColored;
             }
-            else if (Cookie_ID == 5) {
-                  drawing = Brighter_than_sun;
+            else if (Muffin_ID == 5) {
+                  drawing = FallColoredMuffin;
             }
             
             
@@ -158,9 +159,9 @@ public class Cookie {
                                     if(drawing[row] [column] == 1)
                                           panels[count].setBackground(Color.black);
                                     if(drawing[row] [column] == 2)
-                                          panels[count].setBackground(Cookiebase);
+                                          panels[count].setBackground(Muffinbase);
                                     if(drawing[row] [column] == 3)
-                                          panels[count].setBackground(Cookiechoco);
+                                          panels[count].setBackground(Muffinchoco);
                                     if(drawing[row] [column] == 4)
                                           panels[count].setBackground(Color.WHITE);
                                     if(drawing[row] [column] == 5)
