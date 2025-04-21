@@ -1,4 +1,4 @@
-package bakery;
+package java;
 
 import java.awt.Color;
 import java.awt.Container;
