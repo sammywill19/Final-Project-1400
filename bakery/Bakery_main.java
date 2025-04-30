@@ -1,9 +1,17 @@
 package bakery;
-
+/* Strings - lines 50, 71, 80-85, BakeryMenuHandler.java
+ * Variables - lines 10-30, Bakery_main.java
+ * For loop - lines 120-125, BakeryMenuHandler.java
+ * While loop - lines 40-50, Bakery_main.java
+ * Conditionals - lines 130-140, BakeryMenuHandler.java
+ * User Input - lines 35-45, Bakery_main.java
+ * Console Output - lines 50-60, Bakery_main.java
+ * File Output - lines 150-160, BakeryMenuHandler.java
+ * List/Array - lines 120-125, BakeryMenuHandler.java
+ * Additional Class - BakeryMenuHandler.java
+ */
 import java.util.Scanner;
-
 public class Bakery_main {
-
     public static void main(String[] args) {
         // Declare and define bakery objects
         Donut choc = new Donut("chocolate", 45, 22, 17);
